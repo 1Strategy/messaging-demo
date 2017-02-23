@@ -1,0 +1,10 @@
+{
+  "name": "sqs",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "async": "^2.1.4",
+    "aws-sdk": "^2.7.19",
+    "uuid": "^3.0.1"
+  }
+}
