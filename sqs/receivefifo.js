@@ -9,7 +9,7 @@ var async = require('async');
 
 AWS.config.region = 'us-west-2';
 var sqs = new AWS.SQS();
-var queueUrl = 'FIFO_QUEUE_URL_GOES_HERE';
+var queueUrl = 'https://sqs.us-west-2.amazonaws.com/842337631775/andrew.fifo';
 
 //loop forever
 async.forever(
