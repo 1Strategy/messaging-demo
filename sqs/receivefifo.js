@@ -6,10 +6,10 @@ Notes:
 
 var AWS = require('aws-sdk');
 var async = require('async');
-
+AWS.config.credentials = new AWS.SharedIniFileCredentials( { profile: 'sandbox' } );
 AWS.config.region = 'us-west-2';
 var sqs = new AWS.SQS();
-var queueUrl = 'FIFO_QUEUE_URL_GOES_HERE';
+var queueUrl = 'https://sqs.us-west-2.amazonaws.com/842337631775/demo-queue.fifo';
 
 //loop forever
 async.forever(

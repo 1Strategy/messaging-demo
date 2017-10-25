@@ -3,8 +3,9 @@ var async = require('async');
 var uuid = require('uuid');
 
 AWS.config.region = 'us-west-2';
+AWS.config.credentials = new AWS.SharedIniFileCredentials( { profile: 'sandbox' } );
 var sqs = new AWS.SQS();
-var queueUrl = 'FIFO_QUEUE_URL_GOES_HERE';
+var queueUrl = 'https://sqs.us-west-2.amazonaws.com/842337631775/demo-queue.fifo';
 var i = 1;
 var messageGroupId = (process.env.GROUP ? process.env.GROUP : uuid.v4());
 
