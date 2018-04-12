@@ -3,7 +3,7 @@ var async = require('async');
 
 AWS.config.region = 'us-west-2';
 var sqs = new AWS.SQS();
-var queueUrl = 'https://sqs.us-west-2.amazonaws.com/842337631775/andrew';
+var queueUrl = 'QUEUE_URL_GOES_HERE';
 var i = 1;
 
 //loop forever
